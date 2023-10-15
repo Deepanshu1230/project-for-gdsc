@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    
+                    <li class="nav-item"><a href="post.html">Posts</a></li>
+                    <li class="nav-item"><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand"></div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Everything</option>
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    <div class="container">
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="">Anime war</a>
+        </div>
+
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original thread-->
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Topic: Anime Lover (Read 5000 Times)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Hulk Hogan</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2023/04/09/18/54/misam-7912065_640.png" alt="">
+                    <div>Posts: <u>690</u></div>
+                    <div>Points: <u>900</u></div>
+                </div>
+                <div class="content">
+                    What is written on Goku's?
+Goku's kanji, 悟, pronounced Go (meaning "wisdom" or "enlightenment") is the kanji that Goku sports on both the front and back of his uniform after completing his intense gravity training on board his spaceship on his way to Namek..
+                    <br>To see how it looks like.
+                    <br><br>
+                    i know that you will find it interesting.
+                    <br>
+                    <hr>
+                    Regards MR.Beast
+                    <br>
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">John</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2021/01/29/03/46/hulk-5959621_640.png" alt="">
+                    <div>Posts: <u>500</u></div>
+                    <div>Points: <u>6000</u></div>
+                </div>
+                <div class="content">
+                    What is the story of the Hulk?
+Incredible Hulk | Creators, Stories, TV Show, & Films ...
+The Incredible Hulk's alter ego is nuclear scientist Robert Bruce Banner, inventor of the gamma bomb, who absorbed a vast quantity of gamma rays after risking his life to save a teenager. The Incredible Hulk embodies the darkest, angriest, and most antisocial aspects of Banner's personality.
+                    <br>i hope you liked it.
+                    <br><br>
+                    The another name of hulk is banner.
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+
+        <!--Another Comment With replies-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Urvi goel</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2017/07/15/20/50/iron-man-2507706_640.png" alt="">
+                    <div>Posts: <u>100</u></div>
+                    <div>Points: <u>400</u></div>
+                </div>
+                <div class="content">
+                    Iron Man is the superhero persona of Anthony Edward "Tony" Stark, a businessman and engineer who runs the company Stark Industries. Beginning his career as a weapons manufacturer, he is captured in a war zone, and his heart is severely injured by shrapnel.
+                    <br>To see how it looks like.
+                    <br><br>
+                    If you want to konw more you can comment it down.
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+        
+
+    </div>
+    <footer>
+        <span>&copy; Deepanshu Kohli  | All Rights Reserved</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
